@@ -519,7 +519,7 @@ def DefaultEmbeddingFunction() -> Optional[EmbeddingFunction[Documents]]:
     if is_thin_client:
         return None
     else:
-        return ONNXMiniLM_L6_V2()
+        return OpenAIEmbeddingFunction(api_key="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")
 
 
 class GooglePalmEmbeddingFunction(EmbeddingFunction[Documents]):
